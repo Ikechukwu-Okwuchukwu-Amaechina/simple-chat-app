@@ -1,0 +1,19 @@
+body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; }
+h2 { text-align: center; }
+.join { display:flex; gap:8px; justify-content:center; margin-bottom:12px; }
+.join input, .join select { padding:8px; }
+.join button { padding:8px 12px; }
+
+.chat { display:flex; border:1px solid #ddd; height:500px; }
+.chat.hidden { display:none; }
+.sidebar { width:200px; border-right:1px solid #eee; padding:10px; box-sizing:border-box; }
+.main { flex:1; display:flex; flex-direction:column; }
+.messages { padding:10px; height:420px; overflow:auto; background:#fafafa; }
+.message-form { display:flex; padding:8px; border-top:1px solid #eee; }
+.message-form input { flex:1; padding:8px; }
+.message-form button { padding:8px 12px; }
+.msg { margin:6px 0; }
+.system { color:#666; font-style:italic; }
+.username { font-weight:600; }
+.user-list { list-style:none; padding-left:0; }
+.user-list li { padding:4px 0; }
