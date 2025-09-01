@@ -7,6 +7,11 @@ const app = express();
 // serve static files from public/
 app.use(express.static(path.join(__dirname, 'public')));
 
+// basic health endpoint for monitoring and Postman checks
+app.get('/health', (_req, res) => {
+	res.json({ status: 'ok' });
+});
+
 // Socket.io instance (created when connection is called)
 let io;
 
